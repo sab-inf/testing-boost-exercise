@@ -1,3 +1,5 @@
+![SSE Testing Boost](https://github.com/sab-inf/testing-boost-exercise/actions/workflows/main.yml/badge.svg)
+
 # SIDEMADE - Simple Dense Matrix Decomposition
 
 A simple demo code to read dense matrices from files and solve linear systems with them.
