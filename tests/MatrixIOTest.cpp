@@ -12,10 +12,10 @@ struct MatrixIOFixture {
   {
     expected_matrix = MatrixXd(3, 3);
     expected_matrix << 0.680375, 0.59688, -0.329554,
-                      -0.211234, 0.823295, 0.536459,
-                      0.566198, -0.604897, -0.444451;
+    -0.211234, 0.823295, 0.536459,
+    0.566198, -0.604897, -0.444451;
   }
-  MatrixXd    expected_matrix;
+  MatrixXd expected_matrix;
 };
 
 BOOST_FIXTURE_TEST_SUITE(MatrixIOTests, MatrixIOFixture, *boost::unit_test::tolerance(1e-12))
