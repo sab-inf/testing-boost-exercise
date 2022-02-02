@@ -1,0 +1,15 @@
+name: Testing workflow
+
+on: [push]
+
+jobs:
+  style:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: "sudo apt install clang-format"
+        run: sudo apt install clang-format
+      - name: "check src"
+        run: clang-format --dry-run -Werror src/*
+      - name: "check tests"
+        run: clang-format --dry-run -Werror tests/*.cpp
